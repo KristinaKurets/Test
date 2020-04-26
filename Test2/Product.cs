@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Test2
 {
-    public class Product : IComparable
+    public class Product : BaseEntity
     {
         public string Id { get; set; }
         public string Tree_name { get; set; }
@@ -15,9 +15,5 @@ namespace Test2
             Tree_name = tree_Name;
         }
 
-        public int CompareTo(object obj)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
